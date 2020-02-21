@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>The Potfolio Of Kauthar Carelse</title>
+  <link href="https://fonts.googleapis.com/css?family=Fondamento:400,400i|Pacifico&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">HOME</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">ABOUT</a>
+        </div>
+
+        
+        <div class="nav-link-wrapper">
+          <a href="contactform.html">CONTACT FORM</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          KAUTHAR CARELSE
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image: url(images/img8.jpg)"></div>
+          <div class="img-text-wrapper">
+          <div class="logo-wrapper"> 
+            </div>
+
+            <div class="subtitle">My schooling career ended when I completed matric with by obtaining bachelor's degree, at Rocklands Secondary School. I then got the opportunity to do my comptia a+ and n+, at Torque IT. I have established a good reputation for myself with my client, which was ABSA. I always made sure that my clients was satisfied with my service.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">The accomplishments that I have achieved in my life is that I have always made my parents proud, as well as myself. Every job that I have been employed to I made success of and was a fast passed learner.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">After my studying I got an opportunity as an intern at an IT company called TCM. After my internship, I was offered a permanent job and wored for the company for 3 years and 4 months. </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">I have set goals for myself which I am to achieve for sure. One has to make sacrifice and dedication to achieve ones goals, and to make a success of ones life. </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">My interests in life is to make a success of my career. It will only be possible with positivity, motivation, perseverance and dedication.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/img6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+  
+             
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
