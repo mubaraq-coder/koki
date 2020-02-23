@@ -6,10 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Fondamento:400,400i|Pacifico&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
 </head>
 
 <body>
+  <body>
     <div class="container">
       <div class="nav-wrapper">
         <div class="left-side">
@@ -25,27 +26,45 @@
         <div class="nav-link-wrapper active-nav-link">
           <a href="contactform.html">CONTACT FORM</a>
         </div>
-  
-        <div class="right-side">
-         
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="company-info">
+        
       </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          
+            
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
 
-      <div class="content-wrapper">
-    
-    
-    <div class="form-wrap">
-
-      <form action="" method="post">
-       <h1>Contact Us</h1>
-       <input type="Name" placeholder="Enter Your Name !">
-       <input type="Email" placeholder="Enter Your Email !">
-         <textarea placeholder="Type your Message in detail in here."></textarea>
-
-         <div class="g-recaptcha" data-sitekey="6LfBfNoUAAAAAKXQ3lH1_mQ12xgvgYT7cdzMD9Qf"></div>
-
-       <input type="submit">
-      </form>
+  <script src="/__/firebase/7.9.1/firebase-analytics.js"></script>
   <script src="main.js"></script>
+
 </body>
 
 
