@@ -1,0 +1,89 @@
+body{
+    background-image: url(..//img/unnamed.jpg);
+}
+
+#profile{
+    background-color: burlywood;
+    background-image: url(..//img/header-shadow.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+.about{
+    float: left;
+    margin-top: 30px;
+    width: 490px;
+    margin-left: 20px;
+}
+
+.about .photo-inner{
+    float: left;
+    background-image: url(..//img/photo-inner.png) no-repeat;
+    width: 214px;
+    height: 214px;   
+}
+
+.about h1{
+    font-weight: 400;
+    color: cornsilk;
+    line-height: 34px;
+    margin-top: 8px;
+    margin-left: -20px;
+}
+
+.about h3{
+    margin-top: 5px;
+    font-size: 14px;
+    color: ivory;
+    line-height: 18px;
+    font-family: lobster, lobster;
+}
+
+.about p{
+    font-size: 14px;
+    margin-top: 16px;
+    color: ivory;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.personal-info{
+    float: left;
+    margin-top: 30px;
+    width: 300px;
+    min-height: 230px;
+    margin-left: 12px;
+    background: url(..//img/personal-info-sep.png) no-repeat left top;
+    padding:  20px 0 19px 20px ;
+}
+
+.personal-info li{
+    line-height: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    float: left;
+    width: 293px;
+}
+
+.personal-info li label{
+    color: ivory;
+    float: left;
+    padding: 4px 7px;
+    font-weight: 500;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+
+.personal-info li span{
+    float: right;
+    width: 220px;
+    padding-top: 4px;
+    font-weight: 400;
+    color: ivory;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
