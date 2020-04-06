@@ -2,8 +2,19 @@ body{
     background-image: url(..//img/unnamed.jpg);
 }
 
+#container{
+    margin: 0 auto;
+    width: 860px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#content{
+    background-color: white;
+}
+
 #profile{
-    background-color: burlywood;
+    background-color: coral;
     background-image: url(..//img/header-shadow.png);
     background-position: center bottom;
     background-repeat: repeat-x;
@@ -25,8 +36,8 @@ body{
 }
 
 .about h1{
-    font-weight: 400;
-    color: cornsilk;
+    font-weight: 900;
+    color:white;
     line-height: 34px;
     margin-top: 8px;
     margin-left: -20px;
@@ -34,16 +45,16 @@ body{
 
 .about h3{
     margin-top: 5px;
-    font-size: 14px;
-    color: ivory;
+    font-size: 18px;
+    color: white;
     line-height: 18px;
     font-family: lobster, lobster;
 }
 
 .about p{
     font-size: 14px;
-    margin-top: 16px;
-    color: ivory;
+    margin-top: 15px;
+    color: white;
     font-weight: 400;
     line-height: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -87,3 +98,121 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
 }
+
+header{
+    position: relative;
+    overflow: visible;
+}
+
+span.socials-text{
+    position: absolute;
+    right: 0px;
+    color: ivory;
+    padding: 2px 9px;
+    font-size: 22px;
+    cursor: pointer;
+    top: 10px;
+    border-radius: 70px;
+}
+
+ul.socialicons{
+    opacity: 0;
+    top: -1px;
+    position: relative;
+    transition: all ease 1s;
+    z-index: -1;
+    left: -7px;
+}
+
+.pulse-button{
+    position: relative;
+    width: 35px;
+    height: 30px;
+    line-height: 7px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(101, 100, 100);
+    background-color: coral;
+    cursor: pointer;
+    color: ivory;
+    font-size: 15px;
+}
+
+.menu{
+    height: 100px;
+    background-color: ivory;
+    position: relative;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.tabs{
+    height: 100px;
+    position: absolute;
+    margin-top: -14px;
+    z-index: 100;    
+}
+
+.tabs li a{
+    scroll-padding-top: 28px;
+    width: 115px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: coral;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+}
+
+.tabs li.active{
+    background: url(..//img/tab-hover.png) no-repeat;
+}
+
+.tabs li.active a{
+    color: white;
+}
+
+a.tab-profile.active i{
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+
+    0%, 20%, 50%, 80%, 100%{
+        transform: translate(0);
+    }
+
+    40%{
+        transform: translateY(-0px);
+    }
+
+    60%{
+        transform: translateY(10px);
+    }
+}
+
+
+.tabs li > a > i{
+    font-size: 45px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#logo{
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+    display: none;
+}
+
+#logo h4{
+    color: cornsilk;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
+}
+
