@@ -168,12 +168,10 @@ ul.socialicons{
     margin-right: 35px;
 }
 
-.tabs li.active{
-    background: url(..//img/tab-hover.png) no-repeat;
-}
 
-.tabs li.active a{
-    color: white;
+a.tab-profile.active{
+    background: url(..//img/tab-hover.png); no-repeat
+    color: lightcoral;
 }
 
 a.tab-profile.active i{
@@ -183,7 +181,7 @@ a.tab-profile.active i{
 @keyframes bounce{
 
     0%, 20%, 50%, 80%, 100%{
-        transform: translate(0);
+        transform: translateY(0);
     }
 
     40%{
@@ -191,10 +189,9 @@ a.tab-profile.active i{
     }
 
     60%{
-        transform: translateY(10px);
+        transform: translateY(-10px);
     }
 }
-
 
 .tabs li > a > i{
     font-size: 45px;
