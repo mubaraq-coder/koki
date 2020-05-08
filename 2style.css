@@ -30,13 +30,14 @@ body{
 
 .about .photo-inner{
     float: left;
-    background-image: url(..//img/photo-inner.png) no-repeat;
+    background: url(..//img/photo-inner.png) no-repeat;
     width: 214px;
-    height: 214px;   
+    height: 214px; 
+    padding: 12px 0 0 19px;  
 }
 
 .about h1{
-    font-weight: 900;
+    font-weight: 800;
     color:white;
     line-height: 34px;
     margin-top: 8px;
@@ -48,7 +49,7 @@ body{
     font-size: 18px;
     color: white;
     line-height: 18px;
-    font-family: lobster, lobster;
+    font-family: 'Oswald', sans-serif;
 }
 
 .about p{
@@ -57,15 +58,15 @@ body{
     color: white;
     font-weight: 400;
     line-height: 24px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .personal-info{
     float: left;
     margin-top: 30px;
-    width: 300px;
+    width: 310px;
     min-height: 230px;
-    margin-left: 12px;
+    margin-left: 10px;
     background: url(..//img/personal-info-sep.png) no-repeat left top;
     padding:  20px 0 19px 20px ;
 }
@@ -83,19 +84,19 @@ body{
     color: ivory;
     float: left;
     padding: 4px 7px;
-    font-weight: 500;
+    font-weight: 550;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-family: 'Roboto Condensed', sans-serif;    
 }
 
 .personal-info li span{
     float: right;
-    width: 220px;
+    width: 225px;
     padding-top: 4px;
     font-weight: 400;
     color: ivory;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
@@ -127,14 +128,14 @@ ul.socialicons{
 .pulse-button{
     position: relative;
     width: 35px;
-    height: 30px;
-    line-height: 7px;
+    height: 35px;
+    line-height: 15px;
     border: none;
     box-shadow: 0 0 0 0 rgb(101, 100, 100);
     background-color: coral;
     cursor: pointer;
     color: ivory;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .menu{
@@ -146,32 +147,35 @@ ul.socialicons{
 }
 
 .tabs{
-    height: 100px;
+    height: 117px;
     position: absolute;
     margin-top: -14px;
     z-index: 100;    
 }
 
-.tabs li a{
-    scroll-padding-top: 28px;
+.tabs li > a{
+    padding-top: 28px;
     width: 115px;
     display: inline-block;
     background-repeat: no-repeat;
     font-size: 15px;
     color: coral;
     text-align: center;
-    font-weight: 500;
+    font-weight: 580;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     line-height: 35px;
     text-decoration: none;
     margin-right: 35px;
 }
 
+.tabs li.active{
+    background: url(..//img/tab-hover.png); no-repeat;
+    color: coral;
+}
 
-a.tab-profile.active{
-    background: url(..//img/tab-hover.png); no-repeat
-    color: lightcoral;
+.tabs li.active a{
+    color: coral;
 }
 
 a.tab-profile.active i{
@@ -188,7 +192,7 @@ a.tab-profile.active i{
         transform: translateY(-0px);
     }
 
-    60%{
+    59%{
         transform: translateY(-10px);
     }
 }
@@ -209,7 +213,8 @@ a.tab-profile.active i{
 #logo h4{
     color: cornsilk;
     line-height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
     font-size: 7px;
 }
 
