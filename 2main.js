@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
         $logo.show();
     }
 
-    $('.menu.tabs a').click(function() {
+    $('.menu .tabs a').click(function() {
         $logo.fadeIn('slow');
     });
 
@@ -14,28 +14,25 @@ jQuery(document).ready(function(){
         $logo.fadeOut('slow');
     });
 
-    var $content    = $("#content");
+    var $content          = $("#content");
 
     $content.easytabs({
-        animate: true,
-        updateHash: false,
-        transitionIn: "slideDown"
-        transitionOut: "slideUp"
-        animationSpeed: 600,
-        tabs: ".tmenu",
-        tabsActiveClass: "active",
+        animate           : true,
+        updateHash        : false,
+        transitionIn      :'slideDown'
+        transitionOut     :'slideUp'
+        animationSpeed    :600,
+        tabs              :".tmenu",
+        tabsActiveClass   :'active',
     });
 
-    $content.find(".tabs li a").hover(
+    $content.find('.tabs li a').hover(
         function() {
-            $(this)
-            .stop()
-            .animate({ marginTop: "-7px" }, 200);
-        }, 
-        function(){
-            $(this)
-            .stop()
-            .animate({ marginTop: "0px" }, 300);
+            $(this).stop().animate({ marginTop: "-7px" }, 200);
+        },function(){
+            $(this).stop().animate({ marginTop: "0px" }, 300);
         }
     );
+
+    
 });
