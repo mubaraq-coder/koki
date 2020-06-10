@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauthar Website Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43vNhfroj+BmwXdFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/1e55e4923c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Home Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Company</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title__section title--intro">
+            BIO<strong>LOGICAL</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">DEEP CLEANING SPECIALIST</p>
+        <img src="Images/IMG-20200606-WA0022.jpg" alt="Deep cleaning" class="intro__img">
+
+        <h1>Anti Microbial Treatment</h1>
+        <p>Biological Deep Cleaning Services offers professional deep cleaning on a 24/7 emergency services.</p>
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What We do</h2>
+        <div class="services">
+            <div class="service">
+                <p>Our treatment process is applied with a fine mist to cover all exposed areas which benefits lower bacterial counts, cleaning where staff cannot reach and its an evironmentally product. Environmental mist removes 99% of microbial contaminants including virus. fungi. spores and dust mites. </p>
+            </div> <!-- /service-->
+
+         <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who Are We</h2>
+        <p class="section__subtitle section__subtitle--about">Deep Cleaning Specialists</p>
+        <div class="about-me__body">
+            <p>Our ...... utilizes microscopic droplets (>20nm) of our unique disinfectants to infiltrate the smallest spaces, joints, corners, and areas difficult to reach with normal cleaning, allowing the most effective 'Deep Cleaning' to be achieved. Significantly reducing microbial levels hidden in your facility be it bacterial, viral or fungal. Our Environmental Disinfection protocols will allow you to minimise potential Covid 19 contamination helping to reduce any risk of infection.</p>
+        </div>
+        <video width="320" height="240" controls>
+          <source src="Images/VID-20200606-WA0026.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Our Work</h2>
+        <p class="section__subtitle section__subtitle--work">A Selection Of The Range Of Work</p>
+
+        <div class="portfolio">
+            <!-- Portfolio Items-->
+            <a href="#" class="portfolio__item">
+                <img src="Images/IMG-20200606-WA0024.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <a href="#" class="portfolio__item">
+                <img src="Images/IMG-20200606-WA0020.jpg" alt="" class="portfolio__img">
+            </a>
+        
+            <a href="#" class="portfolio__item">
+                <img src="Images/IMG-20200606-WA0021.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+      </section>
+
+
+    <!-- Contact Form-->  
+    <div class="container">
+      <div class="wrapper">
+        <div class="company-info">
+          
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          
+          <form id="contactForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            
+              
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+  
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+      
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <h1>My First Google Map</h1>
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    
+    <script>
+    function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+};
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:biodeepcleaning@gmail.com" class="footer-link">Hello@DeepCleaningServices</a>
+    </footer>
+
+    <script src="index.js"></script>  
+</body>
+</html>
